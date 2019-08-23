@@ -1,0 +1,24 @@
+{
+  "name": "hackathon-boilerplate",
+  "version": "1.0.0",
+  "description": "Hackathon boilerplate for Dilo hackathon festival",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "*",
+    "body-parser": "*",
+    "express-session": "*",
+    "cookie-parser": "*",
+    "morgan": "*",
+    "nedb": "*",
+    "ejs": "*",
+    "socket.io": "*"
+  }
+}
