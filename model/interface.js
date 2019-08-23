@@ -1,4 +1,4 @@
-class interface{
+class interfaces{
     constructor(ds){
         this.datastore = ds;
         this.data = {}
@@ -17,3 +17,5 @@ class interface{
         this.datastore.update({id: this.data.id}, data, {}, callback)
     }
 }
+
+module.exports = interfaces
