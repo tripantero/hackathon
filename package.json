@@ -12,13 +12,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.0",
-    "express": "*",
     "body-parser": "*",
-    "express-session": "*",
     "cookie-parser": "*",
-    "morgan": "*",
-    "nedb": "*",
     "ejs": "*",
-    "socket.io": "*"
+    "express": "*",
+    "express-session": "*",
+    "morgan": "*",
+    "nedb": "*"
   }
 }

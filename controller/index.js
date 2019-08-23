@@ -1,5 +1,5 @@
 const index = (req, res)=>{
-    res.send("Hello World")
+    res.render("index")
 }
 
 module.exports = {
