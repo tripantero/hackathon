@@ -1,0 +1,12 @@
+<% for(var i = 0; i< data.result.length; i++) { %>
+    <% var z = "overlay rounded-sm"; if(i == 0) {z = "active overlay"}%>
+<div class="carousel-item <%= z %>">
+    
+    <img src="<%= data.result[i].images %>" alt="First slide" class="d-block w-100" style="height: 340px;">
+        <div class="carousel-caption d-none d-md-block">
+            <h5><%= data.result[i].kota %></h5>
+            <p><%= data.result[i].deskripsi %></p>
+        </div>
+</div>
+
+<% } %>

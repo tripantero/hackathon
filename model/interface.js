@@ -4,8 +4,12 @@ class interfaces{
         this.data = {}
     }
 
-    save(record) {
-        this.datastore.save(record)
+    save(record = undefined) {
+        if(record){
+            this.datastore.save(record)
+        }else{
+            this.datastore.save(this.data)
+        }
         
     }
 

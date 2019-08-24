@@ -42,8 +42,8 @@
     <!--Destination Header Start-->
         <div class="row mt-5">
             <div class="col">
-                <h3 class="display-4">Setu Babakan</h3>
-                <p class="lead">Jakarta Selatan - DKI Jakarta</p>
+                <h3 class="display-4"><%= data.tempat_wisata %></h3>
+                <p class="lead"><%= data.kawasan %></p>
                 <i class="fas fa-star text-warning"></i>
                 <i class="fas fa-star text-warning"></i>
                 <i class="fas fa-star text-warning"></i>
@@ -55,27 +55,7 @@
             <div class="col border rounded-sm shadow"  style="padding: 0;">
                 <div id="carouselId" class="carousel slide" data-ride="carousel"> 
                     <div class="carousel-inner rounded-sm" role="listbox">
-                        <div class="carousel-item active overlay">
-                            <img src="/images/jakarta.jpg" alt="First slide" class="d-block w-100" style="height: 340px;">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Jakarta</h5>
-                                    <p>The Best Place Looking For Jobs</p>
-                                </div>
-                        </div>
-                        <div class="carousel-item overlay rounded-sm">
-                            <img src="/images/bandung.jpg" alt="Second slide" class="d-block w-100" style="height: 340px;">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Bandung</h5>
-                                    <p>The Best Place To Be Fashionable</p>
-                                </div>
-                        </div>
-                        <div class="carousel-item overlay rounded-sm">
-                            <img src="/images/jogja.jpg" alt="Third slide" class="d-block w-100" style="height: 340px;">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Jogjakarta</h5>
-                                    <p>The Best Place Looking For Foods</p>
-                                </div>
-                        </div>
+                        <%- include('component/carousel') %>
                     </div>
                     <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,8 +73,7 @@
     <div class="col-2 lead bg-primary text-white p-2 pl-4 mt-5">Description</div>
     <div class="row mt-3">
         <div class="col">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias debitis laborum provident ea magnam amet error expedita earum! Praesentium voluptates nam aliquam eius officia ipsam impedit eum! Voluptates, nostrum iure.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique saepe incidunt esse iste non sunt corrupti beatae asperiores corporis, natus facere veritatis modi error ipsam optio culpa distinctio officiis. Eum!
+                <%= data.deskripsi %>
         </div>
     </div>
     <!--Description End-->

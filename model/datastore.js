@@ -14,7 +14,7 @@ class datastore{
                 console.log('error')   
                 return;
             }
-            console.log("data Saved to: "+this.datastore.name)
+            
         })
     }
     
