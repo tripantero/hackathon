@@ -6,7 +6,7 @@ class interfaces{
 
     save(record) {
         this.datastore.save(record)
-        console.log("data Saved to: "+this.datastore.name)
+        
     }
 
     readBy(query = {}, callback){

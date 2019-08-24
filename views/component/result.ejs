@@ -1,0 +1,15 @@
+<% for(var i = 0; i< result.length; i++) { %>
+    <a href="/destination/<%=result[i]._id%>">
+        <div class="col dest bg-light text-dark rounded-sm p-2 mt-3 shadow border">
+            <div class="row">
+                <div class="col-7 ml-2">
+                        <h4 class="display-5"><%= result[i].tempat_wisata %></h4>
+                        <p class="mb-0 mt-2"><%= result[i].kota %></p>
+                </div>
+                <div class="col-3 ml-auto my-auto">
+                    <img src="<%= result[i].images %>" alt="" width="100%" class="rounded-sm">
+                </div>
+            </div>
+        </div>
+    </a>
+<% } %>

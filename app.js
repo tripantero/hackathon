@@ -18,5 +18,4 @@ app.use(session({
     resave: false
 }))
 app.use('/', require('./router'))
-
 app.listen(port, ()=> {console.log("app running on "+port)})

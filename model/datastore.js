@@ -4,14 +4,17 @@ const path = require('../dbpath').path
 class datastore{
     constructor(name, path){
         this.name = name
-        this.database = new nedb({filename: path, autoload: true})
+        this.database = new nedb({filename: path})
+        this.database.loadDatabase()
     }
 
     save(data){
         this.database.insert(data, function(err, docs){
             if(err){
+                console.log('error')   
                 return;
             }
+            console.log("data Saved to: "+this.datastore.name)
         })
     }
     

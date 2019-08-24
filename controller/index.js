@@ -6,13 +6,16 @@ const destination = (req, res) => {
     res.render("destination")
 }
 
-const search = (req, res) => {
-    let q = req.body.search
-    res.render('detailCity')
+const post_search = (req, res) => {
+    res.redirect("/search/"+req.body.search)
 }
+
+const search = require("./search")
+
 
 module.exports = {
     "/": ["get", index],
     "/destination": ["get", destination],
-    "/search" : ["post", search]
+    "/search/:city" : ["get", search],
+    "/search/" : ["post", post_search],
 }
