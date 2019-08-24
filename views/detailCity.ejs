@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Destination</title>
+     <!--CSS Bootstrap-->
+     <link rel="stylesheet" href="/css/all.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <!--Icons Fontawesome-->
+     <script src="https://kit.fontawesome.com/a707598919.js"></script>
+     <!--CSS Custom-->
+     <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
+        <a href="index.html" class="navbar-brand">TripAntero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="destination.html" class="nav-link">Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bookandplan.html" class="nav-link">Book & Plan</a>
+                </li>
+                <a name="" id="" class="btn btn-success my-2 my-sm-0 mr-1" href="signIn.html" role="button">Sign In As Guest</a>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar End-->
+    <!--Container Start-->
+    <div class="container">
+    <!--Maps Destination Start-->
+        <div class="row mt-3 mx-n4">
+            <div id="map-field" class="col border rounded-sm shadow" style="height: 380px;"></div>
+        </div>           
+    <!--Maps Destination End-->
+        <div class="row mt-4">
+            <div class="col-3">
+                <div class="col bg-primary text-white rounded-sm p-1 pl-4 shadow">
+                    <h3 class="display-5 rounded-sm">Indonesia</h3>
+                </div>
+            </div>
+            <div class="col-6 ml-auto">
+                <h1 class="display-4">Jakarta</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-3">
+                <div class="col bg-primary text-white rounded-sm p-3 pl-4 shadow">
+                    <h4 class="display-5">Filter By</h4>
+                    <p class="lead mb-1">Trending</p>
+                    <p class="lead mb-1">Cheap</p>
+                    <p class="lead mb-1">Anything</p>
+                </div>  
+            </div>
+            <div class="col-6 ml-auto">
+            <!--Search Box Main Start-->
+                <div class="col bg-primary rounded-sm p-3 shadow">
+                    <input type="text" name="" id="" class="form-control" placeholder="Let Me Know Your Destination">
+                </div>
+            <!--Search Box Main End-->
+            <!--Results Box Main Start-->
+                <div class="col dest bg-primary text-white rounded-sm p-2 mt-3 shadow">
+                    <div class="row">
+                        <div class="d-block bg-danger p-0 ml-2 rounded-sm" style="width: 10px;"></div>
+                        <div class="col-7 ml-2">
+                                <h4 class="display-5">Pasar Bendungan Hilir</h4>
+                                <p class="mb-0 mt-2">Jakarta Barat</p>
+                        </div>
+                        <div class="col-3 ml-auto my-auto">
+                            <img src="/images/jakarta.jpg" alt="" width="100%" class="rounded-sm">
+                        </div>
+                    </div>
+                </div>
+                <div class="col dest bg-primary text-white rounded-sm p-2 mt-3 shadow">
+                    <div class="row">
+                        <div class="d-block bg-warning p-0 ml-2 rounded-sm" style="width: 10px;"></div>
+                        <div class="col-8 ml-2">
+                                <h4 class="display-5">Monumen Nasional</h4>
+                                <p class="mb-0 mt-2">Jakarta Pusat</p>
+                        </div>
+                        <div class="col-3 ml-auto my-auto">
+                            <img src="/images/jakarta.jpg" alt="" width="100%" class="rounded-sm">
+                        </div>
+                    </div>
+                </div>
+                <div class="col dest bg-primary text-white rounded-sm p-2 mt-3 shadow">
+                    <div class="row">
+                        <div class="d-block bg-success p-0 ml-2 rounded-sm" style="width: 10px;"></div>
+                        <div class="col-8 ml-2">
+                                <h4 class="display-5">Setu Babakan</h4>
+                                <p class="mb-0 mt-2">Jakarta Selatan</p>
+                        </div>
+                        <div class="col-3 ml-auto my-auto">
+                            <img src="/images/jakarta.jpg" alt="" width="100%" class="rounded-sm">
+                        </div>
+                    </div>
+                </div>
+                <div class="col dest bg-primary text-white rounded-sm p-2 mt-3 shadow">
+                    <div class="row">
+                        <div class="d-block bg-light p-0 ml-2 rounded-sm" style="width: 10px;"></div>
+                        <div class="col-8 ml-2">
+                                <h4 class="display-5">Gedung Veldrome</h4>
+                                <p class="mb-0 mt-2">Jakarta Timur</p>
+                        </div>
+                        <div class="col-3 ml-auto my-auto">
+                            <img src="/images/jakarta.jpg" alt="" width="100%" class="rounded-sm">
+                        </div>
+                    </div>
+                </div>
+                <div class="col dest bg-primary text-white rounded-sm p-2 mt-3 shadow">
+                    <div class="row">
+                        <div class="d-block bg-dark p-0 ml-2 rounded-sm" style="width: 10px;"></div>
+                        <div class="col-8 ml-2">
+                                <h4 class="display-5">Ancol</h4>
+                                <p class="mb-0 mt-2">Jakarta Utara</p>
+                        </div>
+                        <div class="col-3 ml-auto my-auto">
+                            <img src="/images/jakarta.jpg" alt="" width="100%" class="rounded-sm">
+                        </div>
+                    </div>
+                </div>
+            <!--Results Box Main End-->
+            </div>
+        </div>
+    </div>
+    <!--Container End-->
+    <!--Footer Start-->
+     <footer class="footer-bs mt-5">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <h2>Logo</h2>
+                    <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                    <p>© 2014 BS3 UI Kit, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Nature</a></li>
+                            <li><a href="#">Explores</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Advice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Newsletter</h4>
+                    <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                    <p>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                          </span>
+                        </div><!-- /input-group -->
+                     </p>
+                </div>
+            </div>
+    </footer>
+    <!--Footer End-->
+</body>
+<!--Google Map API-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+   //fungsi intialize buat map
+   function initialize() {
+       var mapProperty = {
+           center:new google.maps.LatLng(0, 0),
+           zoom:3,
+           mapTypeId:google.maps.MapTypeId.ROADMAP
+       };
+
+       var map = new google.maps.Map(document.getElementById("map-field"), mapProperty);
+       }
+   //window event when load
+       google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap3-typeahead.min.js"></script>
+<script>
+    //hover on list of destination
+    $(document).ready(function() {
+        $(".dest").bind({
+            mouseenter : function() {
+                $(this).removeClass("shadow");
+            },
+            mouseleave : function() {
+                $(this).css("cursor", "pointer");
+                $(this).addClass("shadow");
+            },
+            click : function() {
+                window.location.href = "detainDest.html";
+            }
+        });
+    });
+</script>
+</html>

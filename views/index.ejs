@@ -1,8 +1,166 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--CSS Bootstrap-->
+     <link rel="stylesheet" href="/css/all.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <!--Icons Fontawesome-->
+     <script src="https://kit.fontawesome.com/a707598919.js"></script>
+     <!--CSS Custom-->
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+     <title>Tripple Hub Offline</title>
+</head>
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
+        <a href="index.html" class="navbar-brand">TripAntero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </head>
-    <body>
-        <h1>hello world</h1>
-    </body>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="destination.html" class="nav-link">Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bookandplan.html" class="nav-link">Book & Plan</a>
+                </li>
+                <a name="" id="" class="btn btn-success my-2 my-sm-0 mr-1" href="signIn.html" role="button">Sign In As Guest</a>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar End-->
+    <div class="jumbotron jumbotron-fluid p-0">
+        <div class="d-block overlay">
+            <img class="w-100" src="/images/jakarta.jpg" alt="" style="height: 600px;">
+        </div>
+        <!--Search Box Main Start-->
+        <form action="/search" method="POST">
+            <div class="col-7 bg-primary rounded-sm p-3 shadow position-absolute" style="top: 0;margin-top: 300px; margin-left: 275px;">
+                <input type="text" name="search" id="search" class="form-control" placeholder="Let Me Know Your Destination" style="width: 96%;">
+            </div>
+        </form>
+        <!--Search Box Main End-->
+    </div>
+    <div class="container">
+        <h2 class="display-4">Explore Your Antero</h2>
+        <div class="row mt-4 mb-3">
+
+                <!-- href="destination.html" -->
+            <a class="card-custom" href="/destination">
+                <div class="card overlay rounded-sm ml-3" style="width: 15rem;background:#000;border: none;">
+                    <img class="card-img-top" src="/images/jakarta.jpg" alt="">
+                    <div class="card-body position-absolute text-light" style="top: 0;">
+                        <h4 class="card-title">Destination</h4>
+                    </div>
+                </div>
+            </a>
+            <!-- href="hotel.html" -->
+            <a class="card-custom mx-auto" href="/hotel">
+                <div class="card overlay rounded-sm" style="width: 15em;background:#000;border: none;">
+                    <img class="card-img-top" src="/images/jakarta.jpg" alt="">
+                    <div class="card-body position-absolute text-light" style="top: 0;">
+                        <h4 class="card-title">Hotel</h4>
+                    </div>
+                </div>
+            </a> 
+            <!-- href="transportation.html" -->
+            <a class="card-custom mr-auto" href="/transportation">
+                <div class="card overlay rounded-sm mr-auto" style="width: 15em;background:#000;border: none;">
+                    <img class="card-img-top" src="/images/jakarta.jpg" alt="">
+                    <div class="card-body position-absolute text-light" style="top: 0;">
+                        <h4 class="card-title">Transportation</h4>
+                    </div>
+                </div>
+            </a>
+            <!-- href="tourAttr.html" -->
+            <a href="/tour" class="card-custom">  
+                <div class="card overlay rounded-sm mr-3" style="width: 15em;background:#000;border: none;">
+                    <img class="card-img-top" src="/images/jakarta.jpg" alt="">
+                    <div class="card-body position-absolute text-light" style="top: 0;">
+                        <h4 class="card-title">Tour & Attraction</h4>
+                    </div>
+                </div>
+            </a>    
+        </div>
+    </div>    
+    <div class="container-fluid">
+        <div class="row overlay position-relative overflow-hidden" style="height: 500px; margin-top: 80px;">
+            <img class="w-100" src="/images/plan.jpg" alt="">
+            <div class="d-block position-absolute ml-5 text-light">
+                <div class="w-75" style="margin: 100px 88.5px">
+                    <h2 class="display-4">Make Your Plan</h2>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet illo corporis aspernatur cumque totam rerum voluptate vel repellat ullam impedit adipisci, laborum dicta aperiam sint molestiae saepe in beatae et.
+                    </p>
+                    <a name="" id="" class="btn btn-outline-warning" href="#" role="button">Start Now</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!--Footer Start-->
+    <footer class="footer-bs mt-5">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2>Logo</h2>
+                <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                <p>© 2014 BS3 UI Kit, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+</footer>
+<!--Footer End-->
+</body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap3-typeahead.min.js"></script>
 </html>

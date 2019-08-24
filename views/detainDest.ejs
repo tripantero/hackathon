@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--CSS Bootstrap-->
+     <link rel="stylesheet" href="/css/all.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <!--Icons Fontawesome-->
+     <script src="https://kit.fontawesome.com/a707598919.js"></script>
+     <!--CSS Custom-->
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+     <title>detailDest</title>
+</head>
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow">
+        <a href="index.html" class="navbar-brand">TripAntero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="destination.html" class="nav-link">Destination</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bookandplan.html" class="nav-link">Book & Plan</a>
+                </li>
+                <a name="" id="" class="btn btn-success my-2 my-sm-0 mr-1" href="signIn.html" role="button">Sign In As Guest</a>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar End-->
+    <!--Container Start-->
+    <div class="container">
+    <!--Destination Header Start-->
+        <div class="row mt-5">
+            <div class="col">
+                <h3 class="display-4">Setu Babakan</h3>
+                <p class="lead">Jakarta Selatan - DKI Jakarta</p>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="far fa-star text-warning"></i>
+
+                <a name="" id="" class="btn btn-outline-warning btn-block mt-4" href="planDest.html" role="button">Go Here</a>
+            </div>
+            <div class="col border rounded-sm shadow"  style="padding: 0;">
+                <div id="carouselId" class="carousel slide" data-ride="carousel"> 
+                    <div class="carousel-inner rounded-sm" role="listbox">
+                        <div class="carousel-item active overlay">
+                            <img src="/images/jakarta.jpg" alt="First slide" class="d-block w-100" style="height: 340px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Jakarta</h5>
+                                    <p>The Best Place Looking For Jobs</p>
+                                </div>
+                        </div>
+                        <div class="carousel-item overlay rounded-sm">
+                            <img src="/images/bandung.jpg" alt="Second slide" class="d-block w-100" style="height: 340px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Bandung</h5>
+                                    <p>The Best Place To Be Fashionable</p>
+                                </div>
+                        </div>
+                        <div class="carousel-item overlay rounded-sm">
+                            <img src="/images/jogja.jpg" alt="Third slide" class="d-block w-100" style="height: 340px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Jogjakarta</h5>
+                                    <p>The Best Place Looking For Foods</p>
+                                </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!--Destination Header End-->
+    <!--Description Start-->
+    <div class="col-2 lead bg-primary text-white p-2 pl-4 mt-5">Description</div>
+    <div class="row mt-3">
+        <div class="col">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias debitis laborum provident ea magnam amet error expedita earum! Praesentium voluptates nam aliquam eius officia ipsam impedit eum! Voluptates, nostrum iure.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique saepe incidunt esse iste non sunt corrupti beatae asperiores corporis, natus facere veritatis modi error ipsam optio culpa distinctio officiis. Eum!
+        </div>
+    </div>
+    <!--Description End-->
+    <!--Info Start-->
+    <div class="col-2 lead bg-primary text-white p-2 pl-4 mt-5">Info</div>
+    <div class="row mt-3" style="padding: 0 15px;">
+        <div id="map-field" class="col border rounded-sm shadow" style="width: 100%;height:380px;"></div>
+    </div>
+    <!--Info End-->
+    </div>
+    <!--Container End-->
+    <!--Footer Start-->
+    <footer class="footer-bs mt-5">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <h2>Logo</h2>
+                    <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
+                    <p>© 2014 BS3 UI Kit, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Nature</a></li>
+                            <li><a href="#">Explores</a></li>
+                            <li><a href="#">Science</a></li>
+                            <li><a href="#">Advice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">RSS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Newsletter</h4>
+                    <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                    <p>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                          </span>
+                        </div><!-- /input-group -->
+                     </p>
+                </div>
+            </div>
+    </footer>
+    <!--Footer End-->
+</body>
+<!--Google Map API-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+       //fungsi intialize buat map
+       function initialize() {
+           var mapProperty = {
+               center:new google.maps.LatLng(-6.340376, 106.823642),
+               zoom:18,
+               mapTypeId:google.maps.MapTypeId.ROADMAP
+           };
+   
+           var map = new google.maps.Map(document.getElementById("map-field"), mapProperty);
+           }
+           //window event when load
+           google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap3-typeahead.min.js"></script>
+</html>

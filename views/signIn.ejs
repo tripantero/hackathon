@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!--CSS Bootstrap-->
+     <link rel="stylesheet" href="/css/all.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+     <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <!--Icons Fontawesome-->
+     <script src="https://kit.fontawesome.com/a707598919.js"></script>
+     <!--CSS Custom-->
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+     <title>Tripple Hub Offline</title>
+</head>
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="index.html" class="navbar-brand mx-auto">TripAntero</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!--Navbar End-->
+    <div id="form" class="">
+        <h2 class="display-4 text-center mt-4">Fill Your Data</h2>
+        <div class="row">
+            <div class="col-5 mx-auto mt-5">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Phone Number</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="validate-form" class="d-none">
+        <h2 class="display-4 text-center mt-4">Confirm Your Data</h2>
+        <div class="row">
+            <div class="col-5 mx-auto mt-5">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Code</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fill The Code" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/all.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap3-typeahead.min.js"></script>
+</html>
