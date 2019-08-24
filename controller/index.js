@@ -7,10 +7,12 @@ const destination = (req, res) => {
 }
 
 const search = (req, res) => {
-    console.log(req.body)
+    let q = req.body.search
+    res.render('detailCity')
 }
 
 module.exports = {
     "/": ["get", index],
-    "/destination": ["get", destination]
+    "/destination": ["get", destination],
+    "/search" : ["post", search]
 }
