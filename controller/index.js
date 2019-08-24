@@ -1,23 +1,25 @@
 const index = (req, res)=>{
-    res.render("index", {sess: req.session.phone})
+    res.render("index", {sess: req.session.phone || undefined})
 }
 
 const destination = (req, res) => {
-    res.render("destination", {sess: req.session.phone})
+    res.render("destination", {sess: req.session.phone || undefined})
 }
+
+const logout = require('./logout')
 
 const post_search = (req, res) => {
     res.redirect("/search/"+req.body.search)
 }
 
 const test = (req, res) => {
-    res.render(req.params.name)
+    res.render(req.params.name, {sess: req.session.phone || undefined})
 }
 
 const search = require("./search")
 const detail = require("./destination-detail")
-const sign   = require('./signin')
-const signin = require('./sign')
+const sign   = require('./sign')
+const signin = require('./signin')
 const confirm = require('./confirm')
 
 
@@ -30,5 +32,6 @@ module.exports = {
     "/sign"   : ["get", sign],
     "/signin" : ["post", signin],
     "/confirm" : ["post", confirm],
+    "/logout" : ["get", logout],
     "/test/:name" : ["get", test]
 }

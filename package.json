@@ -18,6 +18,8 @@
     "express": "*",
     "express-session": "*",
     "morgan": "*",
-    "nedb": "*"
+    "nedb": "*",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0"
   }
 }
