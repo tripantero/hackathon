@@ -1,3 +1,3 @@
 {
-    "path": ["result.nedb", "destination.nedb", "sign.nedb"]
+    "path": ["result.nedb", "destination.nedb", "sign.nedb", "plan.nedb", "myplan.nedb"]
 }

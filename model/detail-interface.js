@@ -7,7 +7,7 @@ class detail extends interfaces{
         this.data = { tempat_wisata: '',
         kawasan: '',
         result: [ { images: '', kota: '', deskripsi: '' } ],
-        deskripsi: '' }
+        deskripsi: ''}
     }
 }
 

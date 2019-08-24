@@ -21,6 +21,11 @@ const detail = require("./destination-detail")
 const sign   = require('./sign')
 const signin = require('./signin')
 const confirm = require('./confirm')
+const plan = require('./plan')
+const makeplan = require('./makeplan')
+const myplan = require('./myplan')
+
+const addplan = require("./addplan")
 
 
 module.exports = {
@@ -33,5 +38,9 @@ module.exports = {
     "/signin" : ["post", signin],
     "/confirm" : ["post", confirm],
     "/logout" : ["get", logout],
+    "/plan/:id": ["get", plan],
+    "/makeplan/:id": ["post", makeplan],
+    "/myplan": ["get", myplan],
+    "/submitplan/:id": ["post", addplan],
     "/test/:name" : ["get", test]
 }

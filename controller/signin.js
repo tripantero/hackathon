@@ -10,14 +10,16 @@ module.exports = (req, res) => {
             model.data.confirmation = -1
             model.save()
             req.session.phone = model.data.phone
+            console.log("rrr")
             res.redirect('/')
         }else{
             model.data.email = req.body.email
             model.data.phone = req.body.phone
-            model.data.confirmation = ""+Math.floor(Math.random() * 100000)
+            model.data.confirmation = Math.floor(Math.random() * 100000)
             model.data.islogin = "0"
             model.save()
-            api(req.body.phone, "Your OTP code is: "+model.data.confirmation+" please enter to web form.")
+            console.log(req.body.phone)
+            api(req.body.phone, model.data.confirmation)
             res.redirect('/sign?confirm=1')
         }
     })
