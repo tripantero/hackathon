@@ -1,7 +1,7 @@
 const interfaces = require('./interface')
 const datastore = require('./datastore')[1]
 
-class result extends interfaces{
+class detail extends interfaces{
     constructor(ds){
         super(ds);
         this.data = { tempat_wisata: '',
@@ -11,4 +11,4 @@ class result extends interfaces{
     }
 }
 
-module.exports = new result(datastore)
+module.exports = new detail(datastore)

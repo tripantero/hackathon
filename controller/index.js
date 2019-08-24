@@ -1,9 +1,9 @@
 const index = (req, res)=>{
-    res.render("index")
+    res.render("index", {sess: req.session.phone})
 }
 
 const destination = (req, res) => {
-    res.render("destination")
+    res.render("destination", {sess: req.session.phone})
 }
 
 const post_search = (req, res) => {
@@ -16,6 +16,9 @@ const test = (req, res) => {
 
 const search = require("./search")
 const detail = require("./destination-detail")
+const sign   = require('./signin')
+const signin = require('./sign')
+const confirm = require('./confirm')
 
 
 module.exports = {
@@ -24,5 +27,8 @@ module.exports = {
     "/destination/:id": ["get", detail],
     "/search/:city" : ["get", search],
     "/search/" : ["post", post_search],
+    "/sign"   : ["get", sign],
+    "/signin" : ["post", signin],
+    "/confirm" : ["post", confirm],
     "/test/:name" : ["get", test]
 }

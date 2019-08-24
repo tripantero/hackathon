@@ -25,39 +25,43 @@
         </button>
     </nav>
     <!--Navbar End-->
+    <% if(confirm == 0 || confirm == undefined) {%>
     <div id="form" class="">
         <h2 class="display-4 text-center mt-4">Fill Your Data</h2>
         <div class="row">
             <div class="col-5 mx-auto mt-5">
-                <form>
+                <form method="POST" action="/signin">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Phone Number</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" required>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" required name="phone">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <div id="validate-form" class="d-none">
+    <% } %>
+    <% if(confirm != 0 && confirm != undefined) {%>
+    <div id="validate-form">
         <h2 class="display-4 text-center mt-4">Confirm Your Data</h2>
         <div class="row">
             <div class="col-5 mx-auto mt-5">
-                <form>
+                <form method="POST" action="/confirm">
                     <div class="form-group">
                         <label for="exampleInputPassword1">Confirm Code</label>
-                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fill The Code" required>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Fill The Code" required name="code">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+    <% } %>
 </body>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/all.min.js"></script>

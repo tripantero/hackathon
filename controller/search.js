@@ -6,5 +6,4 @@ module.exports = (req, res)=>{
         if(err) console.log("errrrr");
         res.render('detailCity', {result: docs})
     })
-    
 }

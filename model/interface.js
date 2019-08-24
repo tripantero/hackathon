@@ -17,8 +17,8 @@ class interfaces{
         this.datastore.find(query, callback)
     }
 
-    update(data, callback){
-        this.datastore.update({id: this.data.id}, data, {}, callback)
+    update(query, data, callback){
+        this.datastore.updateBy(query, data, {}, callback)
     }
 }
 
